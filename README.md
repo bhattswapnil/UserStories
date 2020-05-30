@@ -29,7 +29,7 @@ o/p message : story created successfully with storyid(use this story id to get i
 GET http://localhost:8080/stories
 It will give all stories with latest first.
 
-GET http://localhost:8080/stories/{StoryId : created at POST call}
+GET http://localhost:8080/stories/{StoryId} : created at POST call}
 o/p compressed image / video
 
 *TestDb.db 

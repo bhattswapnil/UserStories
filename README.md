@@ -1,6 +1,7 @@
 Steps to execute project:
 
 python3 CreateDb.py
+
 python3 app.py
 
 Description :

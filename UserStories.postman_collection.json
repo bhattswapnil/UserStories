@@ -1,0 +1,191 @@
+{
+	"info": {
+		"_postman_id": "c3925810-6038-454b-b323-a71d7a6d947a",
+		"name": "UserStories",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/CreateStory",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "User 1",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "My Story",
+							"type": "text"
+						},
+						{
+							"key": "duration",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "video",
+							"type": "text"
+						},
+						{
+							"key": "latitiude",
+							"value": " 23.4555",
+							"type": "text"
+						},
+						{
+							"key": "longitude",
+							"value": "45.566666",
+							"type": "text"
+						},
+						{
+							"key": "video",
+							"type": "file",
+							"src": "/home/swapnil/Downloads/Pexels Videos 1433307.mp4"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/CreateStory",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"CreateStory"
+					]
+				},
+				"description": "CreateStoryWithVideo"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/CreateStory Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "User 1",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "My Story",
+							"type": "text"
+						},
+						{
+							"key": "duration",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "video",
+							"type": "text"
+						},
+						{
+							"key": "latitiude",
+							"value": " 23.4555",
+							"type": "text"
+						},
+						{
+							"key": "longitude",
+							"value": "45.566666",
+							"type": "text"
+						},
+						{
+							"key": "video",
+							"type": "file",
+							"src": "/home/swapnil/Downloads/Pexels Videos 1433307.mp4"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/CreateStory",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"CreateStory"
+					]
+				},
+				"description": "CreateStoryWithVideo"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/stories",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"Swapnil\",\n\t\"description\" : \"My Story\",\n\t\"duration\" : \"1\",\n\t\"type\" : \"Image\",\n\t\"latitiude\" : \"234\",\n\t\"longitude\" : \"455\",\n\t\"timestamp\" : \"555555\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/stories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"stories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/stories/2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/stories/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"stories",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
